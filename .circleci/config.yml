@@ -21,4 +21,5 @@ jobs:
 workflows:
   build_test:
     jobs:
-      - run_test
+      - run_tests
+      
