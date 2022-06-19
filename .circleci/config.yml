@@ -13,14 +13,7 @@ jobs:
       - run:
           name: Run unit tests
           command: |
-      - run:
-          name: python go
-          command:
-            python -m pytest
-      - run:
-          name: python install
-          command:
-
+      
             from jinja2.utils import markupsafe 
 
             markupsafe.Markup()
