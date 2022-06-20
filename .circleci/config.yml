@@ -11,6 +11,17 @@ jobs:
           command: |
             echo 'export PATH=~$PATH:~/.local/bin' >> $BASH_ENV && source $BASH_ENV
             pip install --user -r requirements.txt
+  description: "run my first docker image"
+  run_tests2:
+    docker:
+      - image: circleci/python:3.7.4
+    steps:
+      - checkout
+      - run:
+          name: Install Python dependencies
+          command: |
+            echo 'export PATH=~$PATH:~/.local/bin' >> $BASH_ENV && source $BASH_ENV
+            pip install --user -r requirements.txt
 
 
 jobs1:
@@ -27,3 +38,4 @@ workflows:
   build_test_number2:
     jobs:
       - run_tests
+      - run_tests2
