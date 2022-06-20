@@ -11,7 +11,7 @@ jobs:
           command: |
             echo 'export PATH=~$PATH:~/.local/bin' >> $BASH_ENV && source $BASH_ENV
             pip install --user -r requirements.txt
-            echo "gabi was here"
+            echo "gabi was here2\"
 
 
 jobs1:
