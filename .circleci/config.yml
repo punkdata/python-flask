@@ -14,12 +14,14 @@ jobs:
       - run:
           name: Run unit tests
           command: |
-          afafds
-          
+          aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+          afafa
+          affaa
+
 
 #   build2:
 #     docker:
-#       - image: circleci/python:3.8.4
+#       - image: circleci/python:3.8.4s
 #     steps:
 #       - checkout
 #       - run:
