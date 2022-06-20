@@ -14,6 +14,8 @@ jobs:
       - run:
           name: Run unit tests
           command: |
+          afafds
+          
 
 #   build2:
 #     docker:
