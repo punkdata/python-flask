@@ -15,32 +15,32 @@ jobs:
           name: Run unit tests
           command: |
 
-  build2:
-    docker:
-      - image: circleci/python:3.8.4
-    steps:
-      - checkout
-      - run:
-          name: Install Python dependencies
-          command: |
-            echo 'export PATH=~$PATH:~/.local/bin' >> $BASH_ENV && source $BASH_ENV
-            pip install --user -r requirements.txt
-      - run:
-          name: Run unit tests
-          command: |    
-workflows:
-  build_test:
-    jobs:
-      - run_tests
+#   build2:
+#     docker:
+#       - image: circleci/python:3.8.4
+#     steps:
+#       - checkout
+#       - run:
+#           name: Install Python dependencies
+#           command: |
+#             echo 'export PATH=~$PATH:~/.local/bin' >> $BASH_ENV && source $BASH_ENV
+#             pip install --user -r requirements.txt
+#       - run:
+#           name: Run unit tests
+#           command: |    
+# workflows:
+#   build_test:
+#     jobs:
+#       - run_tests
 
-workflows:
-  version: 2
+# workflows:
+#   version: 2
   
-  my_workflow:
-  jobs:
-    -build
-    -build2:
-       requires:
-         -build
+#   my_workflow:
+#   jobs:
+#     -build
+#     -build2:
+#        requires:
+#          -build
     
       
