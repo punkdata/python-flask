@@ -14,9 +14,7 @@ jobs:
       - run:
           name: Run unit tests
           command: |
-          aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-          afafa
-          affaa
+        
 
 
 #   build2:
