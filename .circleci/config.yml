@@ -23,6 +23,7 @@ jobs:
 
 
 jobs1:
+  lalal:
   description: "run my first docker image"
   aviavi:
   deploy:
@@ -34,8 +35,7 @@ jobs1:
 
 workflows:
   build_test_number2:
-    requires:
-      - build
     jobs:
       - run_tests
       - run_tests2
+      
